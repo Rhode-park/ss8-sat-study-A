@@ -7,7 +7,7 @@
 
 import Foundation
 
-//1차 풀이
+//공부 전 풀이
 //var budget: Int = 2000
 //var productsList: [String?] = ["볼펜", "텀블러", "다이어리", "에코백", "머그컵", "후드집업"]
 //
