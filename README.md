@@ -12,4 +12,6 @@
   - ```throws```
   - ```try```
 
+**참석자: Rhode, kokkilE, Rowan**
+
 ## :star: 
