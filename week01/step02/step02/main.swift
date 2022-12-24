@@ -37,9 +37,58 @@ import Foundation
 
 
 //공부 후 풀이
+var budget: Int = 3000
+var productsList: [String?] = ["볼펜", "텀블러", "다이어리", "에코백", "머그컵", "후드집업"]
+let lastIndexOfProductList = productsList.count - 1
+let price = [300, 1000, 500, 1000, 500, 1200]
 
-buy(productNumber: 1)
-buy(productNumber: 1)
-buy(productNumber: 2)
-buy(productNumber: 3)
-buy(productNumber: 10)
+enum ErrorMessage: String, Error {
+    case outOfRange = "상품 번호를 확인하세요. \n"
+    case outOfProduct = "해당 상품의 재고가 없습니다. \n"
+    case outOfMoney = "예산이 부족합니다. \n"
+}
+
+
+
+func buy(productNumber: Int) throws {
+    guard productNumber <= lastIndexOfProductList && productNumber>=0 else {
+        throw ErrorMessage.outOfRange
+    }
+    guard let selectedProduct = productsList[productNumber] else {
+        throw ErrorMessage.outOfProduct
+    }
+    guard budget >= price[productNumber] else {
+        throw ErrorMessage.outOfMoney
+    }
+    
+    productsList[productNumber] = nil
+    budget -= price[productNumber]
+    
+    print("\(selectedProduct)(을/를) 구매하셨습니다.")
+    print("예산이 \(price[productNumber])원 차감됩니다.")
+    print("남은 잔액은 \(budget)원 입니다.")
+    print("")
+    
+}
+
+func selectItem(productNumber: Int) {
+    do {
+        try buy(productNumber: productNumber)
+    } catch ErrorMessage.outOfRange {
+        print(ErrorMessage.outOfRange.rawValue)
+    } catch ErrorMessage.outOfProduct {
+        print(ErrorMessage.outOfProduct.rawValue)
+    } catch ErrorMessage.outOfMoney {
+        print(ErrorMessage.outOfMoney.rawValue)
+    } catch {
+        print("unknown error")
+    }
+
+}
+
+selectItem(productNumber: 1)
+selectItem(productNumber: 2)
+selectItem(productNumber: 9)
+selectItem(productNumber: 2)
+selectItem(productNumber: 5)
+selectItem(productNumber: 4)
