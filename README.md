@@ -14,4 +14,6 @@
 
 **참석자: Rhode, kokkilE, Rowan**
 
+**[참조: week01 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek01%5D-Optional---예외처리)**
+
 ## :star: 
