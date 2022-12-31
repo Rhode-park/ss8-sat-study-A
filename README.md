@@ -16,4 +16,18 @@
 
 **[참조: week01 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek01%5D-Optional---예외처리)**
 
-## :star: 
+## :star: 2주차
+### 학습 주제: Human Interface Guidelines
+
+### 학습 키워드
+ - 네비게이션
+ - 네비게이션 바
+ - 탭 바
+ - 토글
+ - picker
+ - Accessory view
+…
+   
+**참석자: 레옹아범, kokkilE, ROWAN, Rhode**
+
+**[참조: week02 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek02%5D-Human-Interface-Guidelines)**
