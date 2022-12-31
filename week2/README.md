@@ -1,6 +1,6 @@
 # 토요스터디 A반! [8기]
 ## Tab bars
-![애플티비+ 탭바](“https://github.com/Rhode-park/ss8-sat-study-A/blob/leonFather/week2/image/탭바.jpeg?raw=true”)
+![애플티비+ 탭바](“https://raw.githubusercontent.com/Rhode-park/ss8-sat-study-A/leonFather/week2/image/탭바.jpeg”)
 
 > Tab bars help people understand the different types of information or functionality that a view provides.  
 * 탭 바는 뷰가 제공하는 기능, 정보가 서로 다른 타입이라는 것을 유저들에게 이해시킬 수 있게 도와준다.
