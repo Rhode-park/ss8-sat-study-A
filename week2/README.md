@@ -9,7 +9,7 @@
 > Use a tab bar only to enable navigation, not to help people perform actions.  
 * 탭바는 사람들의 기능 동작을 도와주는게 아닌 오직 화면 이동만으로 사용해야한다.
 
-![탭바1](“https://github.com/Rhode-park/ss8-sat-study-A/blob/leonFather/week2/image/탭바1.gif?raw=true”)
+![탭바1](https://github.com/Rhode-park/ss8-sat-study-A/blob/leonFather/week2/image/탭바1.gif?raw=true)
 
 > Make sure the tab bar is visible when people navigate to different areas in your app.  
 * 사용자가 앱에서 다른지역으로 이동했을 때 탭바는 명확하게 표시해야한다.
@@ -51,7 +51,7 @@
 * 유의미한 내용을 제공한다면, 제목에 현재화면을 설명하라.
 * 그러나 네비게이션 바의 제목이 장황하다면 타이틀을 비워둘 수 있다.
 
-![네비게이션바2]("https://github.com/Rhode-park/ss8-sat-study-A/blob/leonFather/week2/image/네비게이션바2.PNG?raw=true”)
+![네비게이션바2](https://github.com/Rhode-park/ss8-sat-study-A/blob/leonFather/week2/image/네비게이션바2.PNG?raw=true)
 
 - [ ] 현재 작품 제목을 타이틀에 쓴 모습으로 현재화면을 설명하고 있다.
 
@@ -65,7 +65,7 @@
 > Consider temporarily hiding the navigation bar to provide a more immersive experience  
 * 몰입할 수 있는 경험을 제공하기 위해서는 일시적으로 네비게이션 바를 숨기는 것을 고려해라
 
-![네비게이션바1](“https://github.com/Rhode-park/ss8-sat-study-A/blob/leonFather/week2/image/네비게이션바1.PNG?raw=true”)
+![네비게이션바1](https://github.com/Rhode-park/ss8-sat-study-A/blob/leonFather/week2/image/네비게이션바1.PNG?raw=true)
 
 - [ ] 사용자가 작품의 이미지와 간단한 내용 그리고 제목을 한번에 볼 수 있는 몰입형 경험을 위해 제목의 타이틀을 숨긴것 같다.
 
