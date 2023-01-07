@@ -67,6 +67,25 @@ func postObserver(name: Names) {
 ![](https://raw.githubusercontent.com/Rhode-park/ss8-sat-study-A/leonFather/week3/image/기존유저.png)
 ![](https://raw.githubusercontent.com/Rhode-park/ss8-sat-study-A/leonFather/week3/image/신규유저.png)
 
+# 해당 method는 MVC중 어디에 속할까?
+```swift
+class ViewController: UIViewController {
+    func register(name: String, phoneNumber: String) {
+        if checkDuplicates(name: name, phoneNumber: phoneNumber) {
+            return
+        } else {
+            let registrant = Registrant(name: name, phoneNumber: phoneNumber)
+            self.registrantList.append(registrant)
+        }
+    }
+}
+```
+#### 해당 메소드는 Model에 속할까? Controller에 속할까?
+* 코에 걸면 코걸이고, 귀에 걸면 귀걸이듯이 해당 메소드는 현재 ViewController내에 있기 때문에 Controller에 속하는 메소드라고 생각한다.
+* 만약 이 메소드가 Registrant 모델 내에서 동작을 하는 함수 였다면 Model에 속하는 메소드라고 말 할 것 같다.
+* 그러나, 해당 메소드는 ViewController내에서 동작하며 위 @IBAction의 버튼에 의해 동작을 하는 함수이므로 Controller로 볼 것 같다.
+
+
 ### 참고 사이트
 > [Model-View-Controller](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html)  
 > [Apple Developer Documentation-UIViewController](https://developer.apple.com/documentation/uikit/uiviewcontroller)  
