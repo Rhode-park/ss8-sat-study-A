@@ -65,7 +65,7 @@ func postObserver(name: Names) {
 * post를 받을 경우 해당 userInfo의 “userInfo” 키값을 받아 그 값으로 Alert를 출력한다.
 
 ![](https://raw.githubusercontent.com/Rhode-park/ss8-sat-study-A/leonFather/week3/image/기존유저.png)
-![https://raw.githubusercontent.com/Rhode-park/ss8-sat-study-A/leonFather/week3/image/신규유저.png]
+![](https://raw.githubusercontent.com/Rhode-park/ss8-sat-study-A/leonFather/week3/image/신규유저.png)
 
 ### 참고 사이트
 > [Model-View-Controller](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html)  
