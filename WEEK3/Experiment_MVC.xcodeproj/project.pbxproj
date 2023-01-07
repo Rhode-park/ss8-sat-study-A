@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD9163F82969491C00BD149B /* step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9163F72969491C00BD149B /* step1.swift */; };
 		CC7CBEFD2701A2F4001839B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7CBEFC2701A2F4001839B1 /* AppDelegate.swift */; };
 		CC7CBEFF2701A2F4001839B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7CBEFE2701A2F4001839B1 /* SceneDelegate.swift */; };
 		CC7CBF012701A2F4001839B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7CBF002701A2F4001839B1 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD9163F72969491C00BD149B /* step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = step1.swift; sourceTree = "<group>"; };
 		CC7CBEF92701A2F4001839B1 /* Experiment_MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Experiment_MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC7CBEFC2701A2F4001839B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC7CBEFE2701A2F4001839B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				CC7CBEFC2701A2F4001839B1 /* AppDelegate.swift */,
 				CC7CBEFE2701A2F4001839B1 /* SceneDelegate.swift */,
 				CC7CBF002701A2F4001839B1 /* ViewController.swift */,
+				AD9163F72969491C00BD149B /* step1.swift */,
 				CC7CBF022701A2F4001839B1 /* Main.storyboard */,
 				CC7CBF052701A2F7001839B1 /* Assets.xcassets */,
 				CC7CBF072701A2F7001839B1 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				CC7CBF012701A2F4001839B1 /* ViewController.swift in Sources */,
 				CC7CBEFD2701A2F4001839B1 /* AppDelegate.swift in Sources */,
 				CC7CBEFF2701A2F4001839B1 /* SceneDelegate.swift in Sources */,
+				AD9163F82969491C00BD149B /* step1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -64,13 +64,8 @@ class ViewController: UIViewController {
     }
     
     func register() {
-        guard let registrantName = nameTextField.text,
-              let registrantPhoneNumber = phoneNumberTextField.text
+        guard let newRegistrant = generateRegistrant()
         else { return }
-        
-        let newRegistrant = Registrant(name: registrantName, phoneNumber: registrantPhoneNumber)
-        
-        //        registrantList.append(newRegistrant)
         
         center.post(name: registerNotificationName, object: nil, userInfo: ["new": newRegistrant])
         
