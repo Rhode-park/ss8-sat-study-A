@@ -54,9 +54,9 @@
 //        guard let registrantName = nameTextField.text,
 //              let registrantPhoneNumber = phoneNumberTextField.text
 //        else { return }
-//        
+//
 //        let newRegistrant = Registrant(name: registrantName, phoneNumber: registrantPhoneNumber)
-//        
+//
 //        registrants.append(newRegistrant)
 //        nameTextField.text = ""
 //        phoneNumberTextField.text = ""

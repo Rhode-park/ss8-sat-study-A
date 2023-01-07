@@ -5,7 +5,7 @@
 
 import UIKit
 
-// Model에 빼줘야하는게 아닌지???
+
 struct Registrant {
     let name: String
     let phoneNumber: String
@@ -13,7 +13,6 @@ struct Registrant {
 
 class ViewController: UIViewController {
     
-    // view (라벨, 버튼)
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var nameLabel: UILabel!
@@ -23,8 +22,7 @@ class ViewController: UIViewController {
     let center: NotificationCenter = NotificationCenter.default
     let registerNotificationName = Notification.Name("지금 등록하기")
     var registrants: [Registrant] = []
-    // ------------------------------------------------
-    // Controller
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
