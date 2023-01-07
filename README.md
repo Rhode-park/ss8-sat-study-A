@@ -1,5 +1,6 @@
-# :fire:  불타는 토요 스터디 A반
+# 불타는 토요 스터디 A반
 
+<<<<<<< HEAD
 스터디원 : Rhode, kokkilE, Rowan, 레옹아범
 
 ## :star: 1주차
@@ -31,3 +32,5 @@
 **참석자: 레옹아범, kokkilE, ROWAN, Rhode**
 
 **[참조: week02 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek02%5D-Human-Interface-Guidelines)**
+=======
+>>>>>>> 621bde3044828d785c2ca1b62a08b27eed378caa
