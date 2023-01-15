@@ -64,4 +64,4 @@
    
 **참석자: 레옹아범, kokkilE, ROWAN, Rhode**
 
-**[참조: week03 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek04%5D-Singleton-Pattern---View-Life-Cycle)**
+**[참조: week04 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek04%5D-Singleton-Pattern---View-Life-Cycle)**
