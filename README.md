@@ -50,3 +50,18 @@
 **참석자: 레옹아범, kokkilE, ROWAN, Rhode**
 
 **[참조: week03 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek03%5D-MVC)**
+
+<br/>
+
+## :star: 4주차
+### 학습 주제: Singleton Pattern / View Life Cycle
+
+### 학습 키워드
+ - View Life Cycle
+ - Singleton
+ - Delegate
+ - super
+   
+**참석자: 레옹아범, kokkilE, ROWAN, Rhode**
+
+**[참조: week03 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek04%5D-Singleton-Pattern---View-Life-Cycle)**
