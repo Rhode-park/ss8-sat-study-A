@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Experiment_VLC_Singleton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8i-Zg-gHT">
+                                <rect key="frame" x="19.5" y="752" width="375" height="70"/>
+                                <color key="backgroundColor" red="0.63422542810000004" green="0.51760834460000005" blue="0.3684726357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="bJu-kv-wOl"/>
+                                    <constraint firstAttribute="width" constant="375" id="lTD-S1-WUu"/>
+                                </constraints>
+                                <state key="normal" title="신상품 구매 페이지로 이동"/>
+                                <connections>
+                                    <action selector="tapBuyingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ah5-ei-dm3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByG-Vd-NTB">
+                                <rect key="frame" x="198" y="436" width="18" height="22"/>
+                                <state key="normal" image="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="tapUpdateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tje-wN-I5S"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 야아 포인트" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7z-On-Fzo">
+                                <rect key="frame" x="96.5" y="223" width="221" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkP-hy-tXH">
+                                <rect key="frame" x="176.5" y="281" width="61" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="RkP-hy-tXH" firstAttribute="top" secondItem="h7z-On-Fzo" secondAttribute="bottom" constant="17" id="2go-aQ-AAq"/>
+                            <constraint firstItem="h7z-On-Fzo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="350-mv-DLu"/>
+                            <constraint firstItem="y8i-Zg-gHT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8o5-BJ-z9e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y8i-Zg-gHT" secondAttribute="bottom" constant="40" id="E3Q-ry-WB9"/>
+                            <constraint firstItem="ByG-Vd-NTB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tvi-mA-CMK"/>
+                            <constraint firstItem="ByG-Vd-NTB" firstAttribute="top" secondItem="RkP-hy-tXH" secondAttribute="bottom" constant="35" id="ixI-Ae-r5u"/>
+                            <constraint firstItem="RkP-hy-tXH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pwu-VE-yw2"/>
+                            <constraint firstItem="h7z-On-Fzo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="vzI-bW-oXu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buyingButton" destination="y8i-Zg-gHT" id="Ks2-LF-z2O"/>
+                        <outlet property="pointLabel" destination="RkP-hy-tXH" id="DP4-K7-FO5"/>
+                        <outlet property="updateButton" destination="ByG-Vd-NTB" id="zyp-3r-GHx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Buying View Controller-->
+        <scene sceneID="dab-2e-pgu">
+            <objects>
+                <viewController storyboardIdentifier="buyingViewController" id="CBv-V7-3GI" customClass="BuyingViewController" customModule="Experiment_VLC_Singleton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kKM-PG-AYS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="academyItem" translatesAutoresizingMaskIntoConstraints="NO" id="wM9-Kj-Hpt">
+                                <rect key="frame" x="-121" y="164" width="656" height="333"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="333" id="sKQ-2c-Teg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpT-xm-7kw">
+                                <rect key="frame" x="19.5" y="752" width="375" height="70"/>
+                                <color key="backgroundColor" red="0.63422542810000004" green="0.51760834460000005" blue="0.3684726357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Bqs-4g-Al4"/>
+                                    <constraint firstAttribute="height" constant="70" id="fCm-94-CWV"/>
+                                </constraints>
+                                <state key="normal" title="구매하기"/>
+                                <connections>
+                                    <action selector="tapBuyingButton:" destination="CBv-V7-3GI" eventType="touchUpInside" id="ssx-YJ-oZW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국내 최초 곰 가죽으로 만든 돕바입니다.  얼어버린 캠퍼의 마음도 사르르 녹여버린다는 소문이 있는데요. 한 크루의 말에 따르면 이 돕바를 입는 순간 PR이 바로 Merge가 되는 마법같은 일이 벌어진다고 하네요." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34R-aF-0jb">
+                                <rect key="frame" x="19.5" y="527" width="375" height="81.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="zq4-Od-um1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신상 야곰 돕바 (50점)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyZ-oq-Pb8">
+                                <rect key="frame" x="61" y="103" width="292" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N43-NC-O5F">
+                                <rect key="frame" x="357" y="63" width="21" height="22"/>
+                                <color key="tintColor" red="0.5149362277965206" green="0.43504200192906822" blue="0.3207730379481199" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="xmark.octagon" catalog="system"/>
+                                <connections>
+                                    <action selector="dismissButton:" destination="CBv-V7-3GI" eventType="touchUpInside" id="lSW-LD-lE3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YYY-az-PZb"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="YYY-az-PZb" firstAttribute="bottom" secondItem="WpT-xm-7kw" secondAttribute="bottom" constant="40" id="3KL-q5-6gB"/>
+                            <constraint firstItem="YYY-az-PZb" firstAttribute="trailing" secondItem="N43-NC-O5F" secondAttribute="trailing" constant="36" id="9Zr-8g-hab"/>
+                            <constraint firstItem="N43-NC-O5F" firstAttribute="top" secondItem="YYY-az-PZb" secondAttribute="top" constant="15" id="9c7-rR-qr0"/>
+                            <constraint firstItem="34R-aF-0jb" firstAttribute="centerX" secondItem="kKM-PG-AYS" secondAttribute="centerX" id="Bbp-M7-Dwx"/>
+                            <constraint firstItem="WpT-xm-7kw" firstAttribute="centerX" secondItem="kKM-PG-AYS" secondAttribute="centerX" id="CoS-cN-pjk"/>
+                            <constraint firstItem="wM9-Kj-Hpt" firstAttribute="centerX" secondItem="kKM-PG-AYS" secondAttribute="centerX" id="I7l-DS-r9T"/>
+                            <constraint firstItem="WyZ-oq-Pb8" firstAttribute="centerX" secondItem="kKM-PG-AYS" secondAttribute="centerX" id="Jsj-nl-qdJ"/>
+                            <constraint firstItem="34R-aF-0jb" firstAttribute="top" secondItem="wM9-Kj-Hpt" secondAttribute="bottom" constant="30" id="dFh-Bc-VxN"/>
+                            <constraint firstItem="wM9-Kj-Hpt" firstAttribute="top" secondItem="WyZ-oq-Pb8" secondAttribute="bottom" constant="20" id="eFX-28-3pY"/>
+                            <constraint firstItem="WyZ-oq-Pb8" firstAttribute="top" secondItem="YYY-az-PZb" secondAttribute="top" constant="55" id="iX3-rI-PyE"/>
+                            <constraint firstItem="wM9-Kj-Hpt" firstAttribute="top" secondItem="WyZ-oq-Pb8" secondAttribute="bottom" constant="20" id="x5l-0x-Lqm"/>
+                            <constraint firstItem="wM9-Kj-Hpt" firstAttribute="centerX" secondItem="kKM-PG-AYS" secondAttribute="centerX" id="yd6-9J-5TT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cnr-xN-HxD"/>
+                    <connections>
+                        <outlet property="buyingButton" destination="WpT-xm-7kw" id="ese-N7-ZeA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Vz-0n-9qI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="academyItem" width="656" height="862"/>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <image name="xmark.octagon" catalog="system" width="128" height="112"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
