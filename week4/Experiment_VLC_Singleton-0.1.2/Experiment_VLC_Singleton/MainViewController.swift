@@ -7,7 +7,6 @@ import UIKit
 
 class PointManager {
     var point: Int = 50
-//    static let shared = PointManager(point: 100)
     
     init(point: Int) {
         self.point = point
@@ -21,7 +20,6 @@ protocol Delegate {
 final class MainViewController: UIViewController {
     
     let pointManager = PointManager(point: 100)
-//    let pointManager = PointManager.shared
     var point: Int {
         get {
             return pointManager.point
@@ -51,7 +49,6 @@ final class MainViewController: UIViewController {
         guard let buyViewController = self.storyboard?.instantiateViewController(withIdentifier: "BuyingViewController") as? BuyingViewController else { return }
         
         buyViewController.delegate = self
-        
         present(buyViewController, animated: true)
     }
 }
