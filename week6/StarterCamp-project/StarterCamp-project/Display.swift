@@ -17,11 +17,17 @@ protocol displayMenuProtocol {
     func displayMenu(for contact: Contact<ContactInformation>)
 }
 
-class Display: displayMenuProtocol, displayAddContactInfoProtocol, displaySearchContactInfoProtocol, displayContactListProtocol {
+class Display: displayMenuProtocol, displayAddContactInfoProtocol, displayContactListProtocol {
     var contact: Contact<ContactInformation>
+    let readingHandler: ReadContact
     
     init(contact: Contact<ContactInformation>) {
         self.contact = contact
+        readingHandler = ReadContact()
+    }
+    
+    func run() {
+        self.displayMenu(for: self.contact)
     }
     
     func displayMenu(for contact: Contact<ContactInformation>) {
@@ -52,7 +58,7 @@ class Display: displayMenuProtocol, displayAddContactInfoProtocol, displaySearch
         print("연락처 정보를 입력해주세요 : ", terminator: "")
         
         do {
-            let contactInformation = try self.verifyContactInfo()
+            let contactInformation = try readingHandler.verifyContactInfo()
             contact.append(contactInformation)
         } catch {
             switch error {
@@ -75,30 +81,28 @@ class Display: displayMenuProtocol, displayAddContactInfoProtocol, displaySearch
     }
     
     func searchContactInfo(from contact: Contact<ContactInformation>) {
-        func searchContactInfo(from contact: Contact) {
-            print("연락처에서 찾을 이름을 입력해주세요 : ", terminator: "")
-            var name: String?
-            
-            do {
-                name = try self.readInput()
-                if let nameOfContact = name {
-                    let filteredList = try contact.filterContactList(include: nameOfContact)
-                    for contact in filteredList {
-                        print("- \(contact.fullText)")
-                    }
+        print("연락처에서 찾을 이름을 입력해주세요 : ", terminator: "")
+        var name: String?
+
+        do {
+            name = try readingHandler.readInput()
+            if let nameOfContact = name {
+                let filteredList = try contact.filterContactList(inclued: nameOfContact)
+                for contact in filteredList {
+                    print("- \(contact.fullText)")
                 }
-            } catch {
-                switch error {
-                case SearchError.unlistedName:
-                    if let name = name {
-                        print("연락처에 \(name) 이(가) 없습니다.")
-                    }
-                case InputError.noInput:
-                    print("아무것도 입력되지 않았습니다. 입력 형식을 확인해주세요.\n")
-                    self.searchContactInfo(from: contact)
-                default:
-                    print(error)
+            }
+        } catch {
+            switch error {
+            case SearchError.unlistedName:
+                if let name = name {
+                    print("연락처에 \(name) 이(가) 없습니다.")
                 }
+            case InputError.noInput:
+                print("아무것도 입력되지 않았습니다. 입력 형식을 확인해주세요.\n")
+                self.searchContactInfo(from: contact)
+            default:
+                print(error)
             }
         }
     }
