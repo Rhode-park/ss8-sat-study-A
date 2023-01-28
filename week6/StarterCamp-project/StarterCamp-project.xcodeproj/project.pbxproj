@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26FB56DB2984A85A004975B3 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB56DA2984A85A004975B3 /* Display.swift */; };
+		26FB56DD2984AAD3004975B3 /* ReadContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB56DC2984AAD3004975B3 /* ReadContact.swift */; };
 		AD0411FF2927AE3B00FAF002 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0411FE2927AE3B00FAF002 /* Contact.swift */; };
 		AD0412012927AE4800FAF002 /* ContactHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0412002927AE4800FAF002 /* ContactHandler.swift */; };
 		AD0412032927AE9000FAF002 /* ContactInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0412022927AE9000FAF002 /* ContactInformation.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		26FB56DA2984A85A004975B3 /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
+		26FB56DC2984AAD3004975B3 /* ReadContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadContact.swift; sourceTree = "<group>"; };
 		AD0411FE2927AE3B00FAF002 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		AD0412002927AE4800FAF002 /* ContactHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactHandler.swift; sourceTree = "<group>"; };
 		AD0412022927AE9000FAF002 /* ContactInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInformation.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				AD0412002927AE4800FAF002 /* ContactHandler.swift */,
 				AD0412022927AE9000FAF002 /* ContactInformation.swift */,
 				AD0412042927BA9100FAF002 /* Error.swift */,
+				26FB56DA2984A85A004975B3 /* Display.swift */,
+				26FB56DC2984AAD3004975B3 /* ReadContact.swift */,
 			);
 			path = "StarterCamp-project";
 			sourceTree = "<group>";
@@ -134,8 +140,10 @@
 			files = (
 				AD0412032927AE9000FAF002 /* ContactInformation.swift in Sources */,
 				AD0412012927AE4800FAF002 /* ContactHandler.swift in Sources */,
+				26FB56DD2984AAD3004975B3 /* ReadContact.swift in Sources */,
 				AD0411FF2927AE3B00FAF002 /* Contact.swift in Sources */,
 				AD0412052927BA9100FAF002 /* Error.swift in Sources */,
+				26FB56DB2984A85A004975B3 /* Display.swift in Sources */,
 				ADFCCECD29272ACC005AEE22 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
