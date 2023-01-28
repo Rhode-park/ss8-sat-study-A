@@ -11,6 +11,7 @@ struct ContactInformation {
     let name: String
     let age: UInt
     let phoneNumber: String
+    
     var fullText: String {
         get { return name + " / \(age) / " + phoneNumber }
     }

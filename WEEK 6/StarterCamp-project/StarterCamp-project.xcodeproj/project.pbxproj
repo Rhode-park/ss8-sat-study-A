@@ -11,6 +11,8 @@
 		AD0412012927AE4800FAF002 /* ContactHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0412002927AE4800FAF002 /* ContactHandler.swift */; };
 		AD0412032927AE9000FAF002 /* ContactInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0412022927AE9000FAF002 /* ContactInformation.swift */; };
 		AD0412052927BA9100FAF002 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0412042927BA9100FAF002 /* Error.swift */; };
+		AD8E109D2984A42500CA87D7 /* InputParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8E109C2984A42500CA87D7 /* InputParser.swift */; };
+		AD8E109F2984A87A00CA87D7 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8E109E2984A87A00CA87D7 /* Protocol.swift */; };
 		ADFCCECD29272ACC005AEE22 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCCECC29272ACC005AEE22 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		AD0412002927AE4800FAF002 /* ContactHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactHandler.swift; sourceTree = "<group>"; };
 		AD0412022927AE9000FAF002 /* ContactInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInformation.swift; sourceTree = "<group>"; };
 		AD0412042927BA9100FAF002 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		AD8E109C2984A42500CA87D7 /* InputParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputParser.swift; sourceTree = "<group>"; };
+		AD8E109E2984A87A00CA87D7 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		ADFCCEC929272ACC005AEE22 /* StarterCamp-project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "StarterCamp-project"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFCCECC29272ACC005AEE22 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +74,8 @@
 				AD0412002927AE4800FAF002 /* ContactHandler.swift */,
 				AD0412022927AE9000FAF002 /* ContactInformation.swift */,
 				AD0412042927BA9100FAF002 /* Error.swift */,
+				AD8E109C2984A42500CA87D7 /* InputParser.swift */,
+				AD8E109E2984A87A00CA87D7 /* Protocol.swift */,
 			);
 			path = "StarterCamp-project";
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 				AD0412032927AE9000FAF002 /* ContactInformation.swift in Sources */,
 				AD0412012927AE4800FAF002 /* ContactHandler.swift in Sources */,
 				AD0411FF2927AE3B00FAF002 /* Contact.swift in Sources */,
+				AD8E109F2984A87A00CA87D7 /* Protocol.swift in Sources */,
 				AD0412052927BA9100FAF002 /* Error.swift in Sources */,
 				ADFCCECD29272ACC005AEE22 /* main.swift in Sources */,
+				AD8E109D2984A42500CA87D7 /* InputParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

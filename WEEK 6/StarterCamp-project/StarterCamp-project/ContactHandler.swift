@@ -8,65 +8,24 @@
 import Foundation
 
 struct ContactHandler {
-    func deleteSpace(_ target: String) -> String {
-        let result = target.components(separatedBy: " ").joined()
-        return result
-    }
-    
-    func readInput() throws -> String {
-        guard let input = readLine(), input != "" else {
-            throw InputError.noInput
-        }
-        return input
-    }
-    
-    func verifyContactInfo() throws -> ContactInformation {
-        let information = try self.readInput()
+    func display(_ contactList: Array<ContactInformation>) {
+        let sortedList = contactList.sorted(by: { $0.name < $1.name } )
         
-        var informationArray: Array<String>
-        informationArray = information.components(separatedBy: "/")
-        
-        guard informationArray.count > 2 else {
-            throw InputError.wrongInputForm
-        }
-        
-        let name = self.deleteSpace(informationArray[0])
-        let age = UInt(self.deleteSpace(informationArray[1]))
-        let phoneNumber = self.deleteSpace(informationArray[2])
-        let phoneNumberParts = phoneNumber.components(separatedBy: "-")
-        let numbers = phoneNumberParts.joined().indices
-        
-        guard let age = age, age != 0, age < 1000 else {
-            throw InputError.wrongAge
-        }
-        guard phoneNumberParts.count == 3 else {
-            throw InputError.wrongPhoneNumber
-        }
-        guard numbers.count >= 9 else {
-            throw InputError.wrongPhoneNumber
-        }
-        
-        let contactInfo = ContactInformation(name: name, age: age, phoneNumber: phoneNumber)
-        print("입력한 정보는 \(age)세 \(name)(\(phoneNumber))입니다.\n")
-        
-        return contactInfo
-    }
-    
-    func displayContactList(of contact: Contact) {
-        contact.contactList.sort(by: { $0.name < $1.name } )
-        for contact in contact.contactList {
+        for contact in sortedList {
             print("- \(contact.fullText)")
         }
     }
     
-    func searchContactInfo(from contact: Contact) {
+    func searchContactInfo(from contactList: Array<ContactInformation>) {
         print("연락처에서 찾을 이름을 입력해주세요 : ", terminator: "")
         var name: String?
         
         do {
-            name = try self.readInput()
+            name = try InputPaser.readInput()
+            
             if let nameOfContact = name {
-                let filteredList = try contact.filterContactList(include: nameOfContact)
+                let filteredList = try self.filterContactList(include: nameOfContact, at: contactList)
+                
                 for contact in filteredList {
                     print("- \(contact.fullText)")
                 }
@@ -79,60 +38,45 @@ struct ContactHandler {
                 }
             case InputError.noInput:
                 print("아무것도 입력되지 않았습니다. 입력 형식을 확인해주세요.\n")
-                self.searchContactInfo(from: contact)
+                self.searchContactInfo(from: contactList)
             default:
                 print(error)
             }
         }
     }
     
-    func addContactInfo(to contact: Contact) {
+    func addContactInfo(to contactList: inout Array<ContactInformation>) {
         print("연락처 정보를 입력해주세요 : ", terminator: "")
         
         do {
-            let contactInformation = try self.verifyContactInfo()
-            contact.append(contactInformation)
+            let contactInformation = try InputPaser.verifyContactInfo()
+            contactList.append(contactInformation)
         } catch {
             switch error {
             case InputError.wrongPhoneNumber:
                 print("입력한 연락처정보가 잘못되었습니다. 입력 형식을 확인해주세요.\n")
-                addContactInfo(to: contact)
+                addContactInfo(to: &contactList)
             case InputError.noInput:
                 print("아무것도 입력되지 않았습니다. 입력 형식을 확인해주세요.\n")
-                addContactInfo(to: contact)
+                addContactInfo(to: &contactList)
             case InputError.wrongAge:
                 print("입력한 나이정보가 잘못되었습니다. 입력 형식을 확인해주세요.\n")
-                addContactInfo(to: contact)
+                addContactInfo(to: &contactList)
             case InputError.wrongInputForm:
                 print("입력 형식이 잘못되었습니다. 입력 형식을 확인해주세요.\n")
-                addContactInfo(to: contact)
+                addContactInfo(to: &contactList)
             default:
                 print(error)
             }
         }
     }
     
-    func displayMenu(for contact: Contact) {
-        print("1) 연락처 추가 2) 연락처 목록보기 3) 연락처 검색 x) 종료\n메뉴를 선택해주세요 : ", terminator: "")
-        let menu = readLine()
+    func filterContactList(include name: String, at list: Array<ContactInformation>) throws -> Array<ContactInformation> {
+        let resultList = list.filter( { $0.name == name } )
         
-        switch menu {
-        case "1":
-            self.addContactInfo(to: contact)
-            displayMenu(for: contact)
-        case "2":
-            self.displayContactList(of: contact)
-            print("")
-            displayMenu(for: contact)
-        case "3":
-            self.searchContactInfo(from: contact)
-            print("")
-            displayMenu(for: contact)
-        case "x":
-            print("\n[프로그램 종료]")
-        default:
-            print("선택이 잘못되었습니다 확인 후 다시 입력해주세요.\n")
-            displayMenu(for: contact)
+        guard resultList.count > 0 else {
+            throw SearchError.unlistedName
         }
+        return resultList
     }
 }

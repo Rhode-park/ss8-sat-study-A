@@ -7,8 +7,7 @@
 
 import Foundation
 
-var myContactHandler = ContactHandler()
-var myContactList = Contact()
+var myContactList = Contact(contactHandler: ContactHandler())
 
-myContactHandler.displayMenu(for: myContactList)
+myContactList.displayMenu()
 
