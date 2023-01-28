@@ -1,7 +1,5 @@
-//
 //  Error.swift
 //  Created by 레옹아범 on 2022/11/18.
-//
 
 enum SearchError: Error {
     case unlistedName
