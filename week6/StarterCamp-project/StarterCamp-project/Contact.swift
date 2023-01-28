@@ -3,10 +3,10 @@
 
 import Foundation
 
-class Contact {
-    var contactList: Array<ContactInformation> = []
+class Contact<Information: ContactInformationProtocol> {
+    var contactList: Array<Information> = []
     
-    func filterContactList(include name: String) throws -> Array<ContactInformation> {
+    func filterContactList(include name: String) throws -> Array<Information> {
         let resultList = self.contactList.filter( { $0.name == name } )
         
         guard resultList.count > 0 else {
@@ -15,7 +15,7 @@ class Contact {
         return resultList
     }
     
-    func append(_ contactInformation: ContactInformation) {
+    func append(_ contactInformation: Information) {
         self.contactList.append(contactInformation)
     }
 }
