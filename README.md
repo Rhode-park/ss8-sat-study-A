@@ -77,6 +77,6 @@
  - 클로저 축약 표현식
  - 제네릭
    
-**참석자: 레옹아범, kokkilE, ROWAN, Rhode**
+**참석자: 레옹아범, ROWAN, Rhode**
 
 **[참조: week07 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek07%5D-closure---high-order-function)**
