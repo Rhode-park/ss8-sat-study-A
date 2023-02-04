@@ -79,4 +79,4 @@
    
 **참석자: 레옹아범, kokkilE, ROWAN, Rhode**
 
-**[참조: week07 wiki]([https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek04%5D-Singleton-Pattern---View-Life-Cycle](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek07%5D-closure---high-order-function))**
+**[참조: week07 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek07%5D-closure---high-order-function)**
