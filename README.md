@@ -65,3 +65,18 @@
 **참석자: 레옹아범, kokkilE, ROWAN, Rhode**
 
 **[참조: week04 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek04%5D-Singleton-Pattern---View-Life-Cycle)**
+
+<br/>
+
+## :star: 7주차
+### 학습 주제: 클로저 / 고차함수
+
+### 학습 키워드
+ - Closure
+ - High Order Function
+ - 클로저 축약 표현식
+ - 제네릭
+   
+**참석자: 레옹아범, kokkilE, ROWAN, Rhode**
+
+**[참조: week04 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek04%5D-Singleton-Pattern---View-Life-Cycle)**
