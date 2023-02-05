@@ -9,19 +9,23 @@ import Foundation
 
 struct ShowMenu {
     func showMenu() {
+        let addAddress = AddAddress()
+        let showAddress = ShowAddress()
+        let searchAddress = SearchAddress()
+        
         print("1) 연락처 추가 2) 연락처 목록보기 3) 연락처 검색 x) 종료")
         print("메뉴를 선택해주세요 : ", terminator: "")
         let menuSelect = readLine()!
         if menuSelect == String(1) {
-            AddAddress().addAddress()
+            addAddress.addAddress()
             print("", terminator: "\n")
             self.showMenu()
         } else if menuSelect == String(2) {
-            ShowAddress().showAddress()
+            showAddress.showAddress()
             print("", terminator: "\n")
             self.showMenu()
         } else if menuSelect == String(3) {
-            SearchAddress().searchAddress()
+            searchAddress.searchAddress()
             print("", terminator: "\n")
             self.showMenu()
         } else if menuSelect == "x" {

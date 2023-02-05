@@ -16,6 +16,7 @@ struct AddAddress {
             let age = address[1].trimmingCharacters(in: [" "])
             let number = address[2].trimmingCharacters(in: [" "])
             
+            //열거형으로 빼고 분리
             let numberType = "^([0-9])+-?([0-9])+-?([0-9]).{9,}$"
             let isCorrectNumber = number.range(of: numberType, options: .regularExpression) != nil
             
