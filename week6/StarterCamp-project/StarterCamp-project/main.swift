@@ -8,4 +8,3 @@ var display = Display(contact: contacts)
 var myContactHandler = ContactHandler(displayHandler: display)
 
 myContactHandler.displayHandler.run()
-

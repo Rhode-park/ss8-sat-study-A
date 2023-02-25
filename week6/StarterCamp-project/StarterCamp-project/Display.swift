@@ -17,9 +17,9 @@ protocol displayMenuProtocol {
     func displayMenu(for contact: Contact<ContactInformation>)
 }
 
-class Display: displayMenuProtocol, displayAddContactInfoProtocol, displayContactListProtocol {
-    var contact: Contact<ContactInformation>
-    let readingHandler: ReadContact
+final class Display: displayMenuProtocol, displayAddContactInfoProtocol, displayContactListProtocol {
+    private var contact: Contact<ContactInformation>
+    private let readingHandler: ReadContact
     
     init(contact: Contact<ContactInformation>) {
         self.contact = contact
@@ -80,7 +80,7 @@ class Display: displayMenuProtocol, displayAddContactInfoProtocol, displayContac
         }
     }
     
-    func searchContactInfo(from contact: Contact<ContactInformation>) {
+    private func searchContactInfo(from contact: Contact<ContactInformation>) {
         print("연락처에서 찾을 이름을 입력해주세요 : ", terminator: "")
         var name: String?
 

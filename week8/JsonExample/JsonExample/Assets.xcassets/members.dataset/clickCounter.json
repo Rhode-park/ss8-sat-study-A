@@ -1,0 +1,27 @@
+[
+    {
+        "nick_name": "aaa",
+        "ss": 8,
+        "phone_info": "iOS"
+    },
+    {
+        "nick_name": "bbb",
+        "ss": 8,
+        "phone_info": "iOS"
+    },
+    {
+        "nick_name": "ccc",
+        "ss": 8,
+        "phone_info": "AOS"
+    },
+    {
+        "nick_name": "ddd",
+        "ss": 4,
+        "phone_info": "AOS"
+    },
+    {
+        "nick_name": "abcdefg",
+        "ss": 1,
+        "phone_info": "iOS"
+    }
+]
