@@ -36,7 +36,7 @@ class MenuTableViewController: UIViewController {
         ],
         .Japanese: [
             Food(name: "스시", price: 20000),
-            Food(name: "스윙스(돈까스)", price: 5000)
+            Food(name: "나베", price: 5000)
         ]
     ]
 

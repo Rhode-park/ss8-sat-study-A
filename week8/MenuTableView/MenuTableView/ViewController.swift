@@ -40,9 +40,13 @@ class ViewController: UIViewController {
         ],
         .Japanese: [
             Food(name: "스시", price: 20000),
-            Food(name: "스윙스(돈까스)", price: 5000)
+            Food(name: "나베", price: 5000)
         ]
-    ]
+    ] {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,9 +57,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func didTapButton(_ sender: Any) {
-        self.present(MenuTableViewController(), animated: true)
+        let randomValue = Int.random(in: 0..<4)
+        
+        switch randomValue {
+        case 0:
+            self.menu[.American]?.append(Food(name: "스테이크", price: 100000))
+        case 1:
+            self.menu[.Chinese]?.append(Food(name: "짜장면", price: 5900))
+        case 2:
+            self.menu[.Korean]?.append(Food(name: "돼지갈비", price: 30000))
+        case 3:
+            self.menu[.Japanese]?.append(Food(name: "돈까스", price: 8000))
+        default:
+            break
+        }
     }
-    
 }
 
 extension ViewController: UITableViewDelegate {
@@ -103,8 +119,8 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let categorySection = self.category.map { return $0.rawValue }
-
+        let categorySection = ["American", "Chinese", "Korean", "Japanese"]
+        
         return categorySection[section]
     }
     
