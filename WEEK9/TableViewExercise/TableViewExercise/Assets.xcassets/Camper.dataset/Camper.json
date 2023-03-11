@@ -1,0 +1,29 @@
+[
+    {
+        "nickName": "레옹아범",
+        "generation": 8,
+        "cellPhoneInfo": "iPhone12(purple)"
+    },
+    {
+        "nickName": "로데",
+        "generation": 8,
+        "cellPhoneInfo": "iPhone13(mini)"
+    },
+    {
+        "nickName": "솜",
+        "generation": 7,
+        "cellPhoneInfo": "iPhone14(pro)"
+    },
+    
+    {
+        "nickName": "웡빙",
+        "generation": 6,
+        "cellPhoneInfo": "iPhone"
+    },
+    
+    {
+        "nickName": "그루트",
+        "generation": 6,
+        "cellPhoneInfo": "iPhone"
+    }
+]
