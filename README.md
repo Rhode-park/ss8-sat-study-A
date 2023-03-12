@@ -68,6 +68,22 @@
 
 <br/>
 
+⭐️6주차 
+### 학습 주제: SOLID
+
+### 학습 키워드
+- 단일 책임 원칙 (Single responsibility principle)
+- 개방-폐쇄 원칙 (Open/closed principle)
+- 리스코프 치환 원칙 (Liskov substitution principle)
+- 인터페이스 분리 원칙 (Interface segregation principle)
+- 의존관계 역전 원칙 (Dependency inversion principle)
+
+**참석자: 레옹아범, kokkilE, ROWAN, Rhode**
+
+**[참조: week06 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek06%5D-SOLID)**
+
+<br/>
+
 ## :star: 7주차
 ### 학습 주제: 클로저 / 고차함수
 
@@ -80,3 +96,17 @@
 **참석자: 레옹아범, ROWAN, Rhode**
 
 **[참조: week07 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek07%5D-closure---high-order-function)**
+
+⭐️10주차 
+### 학습 주제: Protocol Oriented Programming
+
+### 학습 키워드
+- protocol as Type
+- 추상화
+- DIP 원칙
+
+**참석자: 레옹아범, kokkilE, ROWAN, Rhode**
+
+**[참조: week10 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek10%5D-Protocol-Oriented-Programming)**
+
+<br/>
