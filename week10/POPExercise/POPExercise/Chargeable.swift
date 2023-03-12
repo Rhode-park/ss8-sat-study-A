@@ -7,6 +7,7 @@
 
 protocol Chargeable {
     var maximumWattPerHour: WattPerHour { get }
+    var name: String { get }
     
     func convert(chargeableWattPerHour: WattPerHour) -> WattPerHour
 }
