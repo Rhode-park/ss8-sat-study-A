@@ -68,7 +68,7 @@
 
 <br/>
 
-⭐️6주차 
+## ⭐️6주차 
 ### 학습 주제: SOLID
 
 ### 학습 키워드
@@ -97,7 +97,7 @@
 
 **[참조: week07 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek07%5D-closure---high-order-function)**
 
-⭐️10주차 
+## ⭐️10주차 
 ### 학습 주제: Protocol Oriented Programming
 
 ### 학습 키워드
