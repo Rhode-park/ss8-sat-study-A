@@ -5,7 +5,7 @@
 //  Created by Jinah Park on 2023/03/12.
 //
 
-enum Charger: Chargeable {
+enum Charger: Chargeable, Portable {
     case appleWatchCharger
     case iphoneFastCharger
     case ipadCharger

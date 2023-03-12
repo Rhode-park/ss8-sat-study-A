@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct MacBook {
-    let user: String
+struct MacBook: Portable {
+    let name: String
     let maximumWattPerHour: WattPerHour
     var currentBattery: Watt {
         didSet {
@@ -17,15 +17,15 @@ struct MacBook {
     }
     let maximumBattery: Watt
     
-    init(user: String, maximumWattPerHour: Int, currentBattery: Int, maximumBattery: Int = 100) {
-        self.user = user
+    init(name: String, maximumWattPerHour: Int, currentBattery: Int, maximumBattery: Int = 100) {
+        self.name = name
         self.maximumWattPerHour = maximumWattPerHour
         self.currentBattery = currentBattery
         self.maximumBattery = maximumBattery
     }
     
     mutating func chargeBattery(charger: Chargeable) {
-        print("\(user)의 맥북을 충전합니다.")
+        print("\(name)을/를 충전합니다.")
         print("충전 중...")
         let chargeTime = calculateChargingTime(charger: charger)
         let formattedChargeTime = String(format: "%.2f", chargeTime)
