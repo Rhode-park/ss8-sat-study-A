@@ -68,6 +68,18 @@
 
 <br/>
 
+## ⭐️5주차 
+### 학습 주제: UML
+
+### 학습 키워드
+- Type
+- Initializer
+- OOP(객체 지향 패러다임/프로그래밍)
+
+**참석자: 레옹아범, kokkilE, ROWAN, Rhode**
+
+**[참조: week05 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek05%5D-UML)**
+
 ## ⭐️6주차 
 ### 학습 주제: SOLID
 
@@ -96,6 +108,34 @@
 **참석자: 레옹아범, ROWAN, Rhode**
 
 **[참조: week07 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek07%5D-closure---high-order-function)**
+
+## ⭐️8주차 
+### 학습 주제: TableView/Json
+
+### 학습 키워드
+- TableView
+- Json
+
+**참석자: 레옹아범, kokkilE, ROWAN, Rhode**
+
+**[참조: week06 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek06%5D-SOLID)**
+
+<br/>
+
+## ⭐️9주차 
+### 학습 주제: ConcurrencyProgramming
+
+### 학습 키워드
+- 동시성
+- 병렬
+- 동기
+- 비동기
+
+**참석자: 레옹아범, kokkilE, ROWAN**
+
+**[참조: week09 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek09%5D-Concurrency-Programming)**
+
+<br/>
 
 ## ⭐️10주차 
 ### 학습 주제: Protocol Oriented Programming
