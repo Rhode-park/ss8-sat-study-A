@@ -150,3 +150,16 @@
 **[참조: week10 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek10%5D-Protocol-Oriented-Programming)**
 
 <br/>
+
+## ⭐️11주차 
+### 학습 주제: Responder Chain
+
+### 학습 키워드
+- Responder chain
+- change dynamic color(system color) to general color
+- Gesture Recognizer
+- hitTest
+
+**참석자: 레옹아범, kokkilE, ROWAN, Rhode**
+
+**[참조 : week11 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek11%5D-Responder-Chain)**
