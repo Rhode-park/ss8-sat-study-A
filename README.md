@@ -118,7 +118,7 @@
 
 **참석자: 레옹아범, kokkilE, ROWAN, Rhode**
 
-**[참조: week06 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek06%5D-SOLID)**
+**[참조: week08 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek06%5D-SOLID)**
 
 <br/>
 
