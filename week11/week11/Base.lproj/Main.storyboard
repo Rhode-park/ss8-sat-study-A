@@ -63,9 +63,6 @@
                             <constraint firstItem="WZG-5m-YeU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="xOX-mi-7L0"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="customView" destination="WZG-5m-YeU" id="Nkt-9G-zmU"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
