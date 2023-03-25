@@ -163,3 +163,16 @@
 **참석자: 레옹아범, kokkilE, ROWAN, Rhode**
 
 **[참조 : week11 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek11%5D-Responder-Chain)**
+
+## ⭐️12주차 
+### 학습 주제: UICollectionView
+
+### 학습 키워드
+- UICollectionViewFlowLayout
+- UICollectionViewDataSource
+- UICollectionViewDelegateFlowLayout
+- ScrollViewDelegate
+
+**참석자: 레옹아범, kokkilE, ROWAN, Rhode**
+
+**[참조 : week12 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek12%5D-Collection-View)**
