@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Cache" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G9j-p9-EzB">
+                                <rect key="frame" x="96.666666666666686" y="89" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="95A-Ep-QfS"/>
+                                    <constraint firstAttribute="height" constant="200" id="W6F-wC-2xD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpd-x4-5ZT">
+                                <rect key="frame" x="96.666666666666686" y="309" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8hT-Sh-IAe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="첫 번째 이미지 받아오기">
+                                    <color key="baseBackgroundColor" red="0.95294117649999999" green="0.7725490196" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchUpInsideFirstImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UCO-fz-VGn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyn-Wq-kbg">
+                                <rect key="frame" x="96.666666666666686" y="594" width="200" height="34.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="azR-Do-VyT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="두 번째 이미지 받아오기">
+                                    <color key="baseBackgroundColor" red="0.75686274509999996" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchUpInsideSecondImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CEr-vi-qvd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lng-aK-Jir">
+                                <rect key="frame" x="96.666666666666686" y="648.33333333333337" width="200" height="34.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9M8-Gt-4mU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="이미지 초기화">
+                                    <color key="baseBackgroundColor" red="0.3803921569" green="0.64313725489999995" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZL-xg-587">
+                                <rect key="frame" x="96.666666666666686" y="692.66666666666663" width="200" height="34.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34.329999999999998" id="JoT-8l-eX0"/>
+                                    <constraint firstAttribute="width" constant="200" id="WAc-dw-zIY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="캐시비우기">
+                                    <color key="baseBackgroundColor" red="0.77157920599999996" green="0.73517256980000001" blue="0.57580912110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tBe-Wb-89D">
+                                <rect key="frame" x="96.666666666666686" y="374" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="E3w-G0-lCY"/>
+                                    <constraint firstAttribute="width" constant="200" id="bWl-Nz-oYW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G9j-p9-EzB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="0Ef-QP-kVC"/>
+                            <constraint firstItem="tBe-Wb-89D" firstAttribute="top" secondItem="Gpd-x4-5ZT" secondAttribute="bottom" constant="30" id="1oH-gf-bTO"/>
+                            <constraint firstItem="uyn-Wq-kbg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2mq-Qs-um5"/>
+                            <constraint firstItem="lng-aK-Jir" firstAttribute="top" secondItem="uyn-Wq-kbg" secondAttribute="bottom" constant="20" id="FaO-Rw-9xI"/>
+                            <constraint firstItem="tBe-Wb-89D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kdm-9K-IwO"/>
+                            <constraint firstItem="uyn-Wq-kbg" firstAttribute="top" secondItem="tBe-Wb-89D" secondAttribute="bottom" constant="20" id="QbT-sH-FV3"/>
+                            <constraint firstItem="Gpd-x4-5ZT" firstAttribute="top" secondItem="G9j-p9-EzB" secondAttribute="bottom" constant="20" id="Rjz-Fh-yma"/>
+                            <constraint firstItem="eZL-xg-587" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ba9-5V-DK4"/>
+                            <constraint firstItem="Gpd-x4-5ZT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cua-Rn-4mG"/>
+                            <constraint firstItem="eZL-xg-587" firstAttribute="top" secondItem="lng-aK-Jir" secondAttribute="bottom" constant="10" id="gR3-TF-LeF"/>
+                            <constraint firstItem="lng-aK-Jir" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iSQ-mr-wAv"/>
+                            <constraint firstItem="G9j-p9-EzB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ppV-lI-g9u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstImage" destination="G9j-p9-EzB" id="frf-o4-ECF"/>
+                        <outlet property="secondImage" destination="tBe-Wb-89D" id="z2J-Xe-hpT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
