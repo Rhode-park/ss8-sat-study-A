@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--URL Cache View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="URLCacheViewController" customModule="_30401" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KT7-ZG-ZWW">
+                                <rect key="frame" x="76" y="142" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:2" id="GDi-Fn-INp"/>
+                                    <constraint firstAttribute="width" secondItem="KT7-ZG-ZWW" secondAttribute="height" multiplier="1:1" id="jZM-8e-BGI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iTy-w1-lJa">
+                                <rect key="frame" x="76" y="343" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iTy-w1-lJa" secondAttribute="height" multiplier="1:1" id="IS6-Nx-ElW"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="firstButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6SB-rE-q7L">
+                                <rect key="frame" x="159" y="300" width="75" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6SB-rE-q7L" secondAttribute="height" multiplier="6:1" id="rvS-5a-Ll6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="첫 번째 이미지 받아오기">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchUpFirstImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Not-x7-lwc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="secondButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8F-CY-nOw">
+                                <rect key="frame" x="159" y="499" width="75" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="두 번째 이미지 받아오기">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchUpSecondImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HNr-ry-bEf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT8-tE-oag">
+                                <rect key="frame" x="159" y="597" width="75" height="35"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ujp-7T-V0Y"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="이미지 초기화">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchUpClearImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XfN-qz-L0x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujO-y5-RdK">
+                                <rect key="frame" x="159" y="674" width="75" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Rp3-jT-auv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="캐시 비우기">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchUpClearCacheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8mf-oo-a96"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KT7-ZG-ZWW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1uC-0b-0mO"/>
+                            <constraint firstItem="6SB-rE-q7L" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:1.7" id="8g5-Oe-WwF"/>
+                            <constraint firstItem="KT7-ZG-ZWW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Dx0-e0-Hvn"/>
+                            <constraint firstItem="K8F-CY-nOw" firstAttribute="top" secondItem="iTy-w1-lJa" secondAttribute="bottom" constant="20" id="EYs-Mq-gyj"/>
+                            <constraint firstItem="ujO-y5-RdK" firstAttribute="top" secondItem="gT8-tE-oag" secondAttribute="bottom" constant="20" id="EoF-qZ-wGb"/>
+                            <constraint firstItem="iTy-w1-lJa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:2" id="FyD-xc-1jM"/>
+                            <constraint firstItem="gT8-tE-oag" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:1.2" id="Ipq-61-U81"/>
+                            <constraint firstItem="6SB-rE-q7L" firstAttribute="top" secondItem="KT7-ZG-ZWW" secondAttribute="bottom" constant="20" id="J2d-9H-oBk"/>
+                            <constraint firstItem="K8F-CY-nOw" firstAttribute="width" secondItem="K8F-CY-nOw" secondAttribute="height" multiplier="6:1" id="M3m-eh-txt"/>
+                            <constraint firstItem="6SB-rE-q7L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MEY-bt-MMI"/>
+                            <constraint firstItem="ujO-y5-RdK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:1.2" id="QbH-Nq-lgs"/>
+                            <constraint firstItem="gT8-tE-oag" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TJu-WG-xW5"/>
+                            <constraint firstItem="iTy-w1-lJa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Vzz-kr-pvC"/>
+                            <constraint firstItem="gT8-tE-oag" firstAttribute="top" secondItem="K8F-CY-nOw" secondAttribute="bottom" constant="40" id="gQH-vr-Pvo"/>
+                            <constraint firstItem="K8F-CY-nOw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:1.7" id="hBd-gI-xGt"/>
+                            <constraint firstItem="K8F-CY-nOw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jYm-Ap-VrJ"/>
+                            <constraint firstItem="iTy-w1-lJa" firstAttribute="top" secondItem="6SB-rE-q7L" secondAttribute="bottom" constant="20" id="sTl-GI-ECK"/>
+                            <constraint firstItem="ujO-y5-RdK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wWW-Wn-bbe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstImage" destination="KT7-ZG-ZWW" id="TPW-Si-oYM"/>
+                        <outlet property="secondImage" destination="iTy-w1-lJa" id="ic6-pf-lD7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
