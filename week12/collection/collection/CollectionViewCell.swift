@@ -18,7 +18,7 @@ final class CollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
-        self.backgroundColor = .yellow
+        self.backgroundColor = .systemBackground
     }
     
     override init(frame: CGRect) {

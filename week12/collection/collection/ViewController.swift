@@ -17,40 +17,43 @@ class ViewController: UIViewController, UICollectionViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var config = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
+        config.headerMode = .firstItemInSection
+        
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         
         flowLayout.itemSize = CGSize(width: self.view.bounds.width, height: self.collectionView.bounds.height / 4)
-        flowLayout.minimumLineSpacing = 10
+        flowLayout.minimumLineSpacing = 1
         flowLayout.minimumInteritemSpacing = 5
         
         collectionView.isPagingEnabled = false
-        flowLayout.scrollDirection = .horizontal
+        flowLayout.scrollDirection = .vertical
         
         collectionView.decelerationRate = .fast
     }
 }
 
-extension ViewController : UIScrollViewDelegate {
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        
-        let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        let cellWidthIncludingSpacing = layout.itemSize.width + layout.minimumLineSpacing
-        
-        var offset = targetContentOffset.pointee
-        let index = (offset.x + scrollView.contentInset.left) / cellWidthIncludingSpacing
-        var roundedIndex = round(index)
-        
-        if scrollView.contentOffset.x > targetContentOffset.pointee.x {
-            roundedIndex = floor(index)
-        } else {
-            roundedIndex = ceil(index)
-        }
-        
-        offset = CGPoint(x: roundedIndex * cellWidthIncludingSpacing - scrollView.contentInset.left, y: -scrollView.contentInset.top)
-        targetContentOffset.pointee = offset
-    }
-}
+//extension ViewController : UIScrollViewDelegate {
+//    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+//
+//        let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+//        let cellWidthIncludingSpacing = layout.itemSize.width + layout.minimumLineSpacing
+//
+//        var offset = targetContentOffset.pointee
+//        let index = (offset.x + scrollView.contentInset.left) / cellWidthIncludingSpacing
+//        var roundedIndex = round(index)
+//
+//        if scrollView.contentOffset.x > targetContentOffset.pointee.x {
+//            roundedIndex = floor(index)
+//        } else {
+//            roundedIndex = ceil(index)
+//        }
+//
+//        offset = CGPoint(x: roundedIndex * cellWidthIncludingSpacing - scrollView.contentInset.left, y: -scrollView.contentInset.top)
+//        targetContentOffset.pointee = offset
+//    }
+//}
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
