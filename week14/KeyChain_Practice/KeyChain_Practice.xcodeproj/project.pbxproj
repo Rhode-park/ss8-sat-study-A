@@ -18,6 +18,7 @@
 		D0E9D15229E15E5B00063F90 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9D14F29E15E5B00063F90 /* KeychainManager.swift */; };
 		D0E9D15329E15E5B00063F90 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9D15029E15E5B00063F90 /* Credentials.swift */; };
 		D0E9D15429E15E5B00063F90 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9D15129E15E5B00063F90 /* KeychainError.swift */; };
+		D0E9D15629E1904300063F90 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9D15529E1904300063F90 /* AlertManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D0E9D14F29E15E5B00063F90 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		D0E9D15029E15E5B00063F90 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		D0E9D15129E15E5B00063F90 /* KeychainError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
+		D0E9D15529E1904300063F90 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		D0E9D13229E15B2100063F90 /* KeyChain_Practice */ = {
 			isa = PBXGroup;
 			children = (
+				D0E9D15529E1904300063F90 /* AlertManager.swift */,
 				D0E9D14E29E15E2200063F90 /* KeyChain */,
 				D0E9D14729E15DB300063F90 /* Controller */,
 				D0E9D13329E15B2100063F90 /* AppDelegate.swift */,
@@ -81,9 +84,9 @@
 		D0E9D14729E15DB300063F90 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D0E9D14929E15E1000063F90 /* ChangePasswordViewController.swift */,
-				D0E9D14A29E15E1000063F90 /* DiaryViewController.swift */,
 				D0E9D14829E15E1000063F90 /* LogInViewController.swift */,
+				D0E9D14A29E15E1000063F90 /* DiaryViewController.swift */,
+				D0E9D14929E15E1000063F90 /* ChangePasswordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				D0E9D14C29E15E1000063F90 /* ChangePasswordViewController.swift in Sources */,
 				D0E9D13629E15B2100063F90 /* SceneDelegate.swift in Sources */,
 				D0E9D14B29E15E1000063F90 /* LogInViewController.swift in Sources */,
+				D0E9D15629E1904300063F90 /* AlertManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

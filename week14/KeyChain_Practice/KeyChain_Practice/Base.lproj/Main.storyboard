@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -61,6 +60,18 @@
                                     <action selector="addNewPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="skV-S9-vVp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phj-wg-747">
+                                <rect key="frame" x="32" y="643.5" width="350" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="9dZ-iT-aFm"/>
+                                    <constraint firstAttribute="height" constant="50" id="D6K-Mt-JKL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="새로운 비밀번호 등록"/>
+                                <connections>
+                                    <action selector="tapChangePasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oWw-Ty-rZ5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -71,7 +82,9 @@
                             <constraint firstItem="lB0-0Q-MZI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="adr-zi-ItL"/>
                             <constraint firstItem="lB0-0Q-MZI" firstAttribute="top" secondItem="f37-H9-hQO" secondAttribute="bottom" constant="185" id="dzc-2j-53V"/>
                             <constraint firstItem="FI8-et-T9x" firstAttribute="top" secondItem="lB0-0Q-MZI" secondAttribute="bottom" constant="30" id="h4Z-wm-3no"/>
+                            <constraint firstItem="phj-wg-747" firstAttribute="top" secondItem="Mka-V8-2Kw" secondAttribute="bottom" constant="25" id="h5O-xx-ab1"/>
                             <constraint firstItem="f37-H9-hQO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="igY-PU-o4r"/>
+                            <constraint firstItem="phj-wg-747" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jIL-U2-JSP"/>
                             <constraint firstItem="Mka-V8-2Kw" firstAttribute="top" secondItem="Qf2-aB-ztc" secondAttribute="bottom" constant="25" id="jsd-J2-4H6"/>
                             <constraint firstItem="Qf2-aB-ztc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mjW-Zd-m67"/>
                             <constraint firstItem="f37-H9-hQO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="thW-Ag-chQ"/>
@@ -139,7 +152,7 @@
         <!--Change Password View Controller-->
         <scene sceneID="NzL-Vo-b97">
             <objects>
-                <viewController id="BNa-Nm-gwC" customClass="ChangePasswordViewController" customModule="KeyChain_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newPW" id="BNa-Nm-gwC" customClass="ChangePasswordViewController" customModule="KeyChain_Practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MaP-wo-ds5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,6 +185,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="비밀번호 변경하기"/>
+                                <connections>
+                                    <action selector="tapChangePasswordButton:" destination="BNa-Nm-gwC" eventType="touchUpInside" id="m7s-Bu-O8S"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GvP-lV-yhz">
                                 <rect key="frame" x="174" y="338" width="200" height="34"/>
@@ -197,6 +213,10 @@
                             <constraint firstItem="1ei-AU-td5" firstAttribute="centerX" secondItem="MaP-wo-ds5" secondAttribute="centerX" id="uqi-aZ-pyr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentPWTextField" destination="GvP-lV-yhz" id="6ad-mw-AFY"/>
+                        <outlet property="newPWTextField" destination="gZo-Q2-tib" id="5t7-G9-qSz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="659-6d-YNK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

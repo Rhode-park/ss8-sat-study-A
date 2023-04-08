@@ -59,9 +59,10 @@ final class KeychainManager {
     }
     
     func updateKeyChain(credentials: Credentials) throws {
-        let query: [String: Any] = [kSecClass as String: kSecClassGenericPassword,
-                                    kSecAttrAccount as String: credentials.userName]
+        let account = credentials.userName
         let password = credentials.password.data(using: String.Encoding.utf8)!
+        let query: [String: Any] = [kSecClass as String: kSecClassGenericPassword,
+                                    kSecAttrAccount as String: account]
         let attributes: [String: Any] = [kSecValueData as String: password]
         let status = SecItemUpdate(query as CFDictionary, attributes as CFDictionary)
         
