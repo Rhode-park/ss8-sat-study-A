@@ -192,3 +192,19 @@
 
 **[참조 : week14 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek14%5D-KeyChain)**
 
+<br/>
+
+## ⭐️15주차 
+### 학습 주제: Core Data
+
+### 학습 키워드
+- Core Data
+- NSPredicate
+- viewContext
+- UITabBarController
+- UITableViewCell EditingStyle
+
+**참석자: 레옹아범, ROWAN, Rhode**
+
+**[참조 : week15 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek15%5D-Core-Data)**
+
