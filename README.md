@@ -208,3 +208,16 @@
 
 **[참조 : week15 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek15%5D-Core-Data)**
 
+## ⭐️16주차 
+### 학습 주제: UIView Animation
+
+### 학습 키워드
+- UIView
+- UIView.AnimationOptions
+- animate
+- animateKeyframes
+- addKeyframe
+
+**참석자: 레옹아범, ROWAN, kokkilE**
+
+**[참조 : week16 wiki](https://github.com/Rhode-park/ss8-sat-study-A/wiki/%5Bweek16%5D-UIView-Animation)**
