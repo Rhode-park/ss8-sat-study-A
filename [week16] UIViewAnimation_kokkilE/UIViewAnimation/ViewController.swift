@@ -27,23 +27,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func touchUpNewMacButton(_ sender: Any) {
-        UIView.animateKeyframes(withDuration: 0.6, delay: 0, options: [.repeat]) {
-            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 1.0/4.0) {
-                self.imageView.transform = CGAffineTransform(scaleX: 1.2, y: 1)
-            }
-            
-            UIView.addKeyframe(withRelativeStartTime: 1.0/4.0, relativeDuration: 1.0/4.0) {
-                self.imageView.transform = CGAffineTransform(scaleX: 1, y: 1)
+        imageView.transform = CGAffineTransform(scaleX: 0.6, y: 1.5)
+        
+        UIView.animateKeyframes(withDuration: 0.6, delay: 0, options: [.repeat, .autoreverse]) {
+            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 2.0/4.0) {
+                self.imageView.transform = CGAffineTransform(scaleX: 1.2, y: 0.7)
             }
 
-            UIView.addKeyframe(withRelativeStartTime: 2.0/4.0, relativeDuration: 1.0/4.0) {
-                self.imageView.transform = CGAffineTransform(scaleX: 1, y: 1.5)
+            UIView.addKeyframe(withRelativeStartTime: 2.0/4.0, relativeDuration: 2.0/4.0) {
+                self.imageView.transform = CGAffineTransform(scaleX: 0.6, y: 1.5)
             }
-            
-            UIView.addKeyframe(withRelativeStartTime: 3.0/4.0, relativeDuration: 1.0/4.0) {
-                self.imageView.transform = CGAffineTransform(scaleX: 1, y: 1)
-            }
-
         }
     }
     
@@ -52,8 +45,7 @@ class ViewController: UIViewController {
     @IBAction func touchUpRollBackButton(_ sender: Any) {
         
         imageView.layer.removeAllAnimations()
-        
-        imageView.transform = CGAffineTransform(translationX: 0, y: 0)
+        imageView.transform = CGAffineTransform(scaleX: 1, y: 1)
     }
 }
 
